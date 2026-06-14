@@ -53,6 +53,23 @@ Abrir:
 ```plaintext
 http://127.0.0.1:5000
 ```
+## Capturas
+
+### Login
+
+![Login](images/login.png)
+
+---
+
+### Menú principal
+
+![Inicio](images/inicio.png)
+
+---
+
+### Inventario
+
+![Inventario](images/inventario.png)
 ---
 Usuario: admin
 
