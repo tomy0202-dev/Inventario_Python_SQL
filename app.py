@@ -5,6 +5,8 @@ from flask import redirect
 from flask import session
 
 import mysql.connector
+import os
+import psycopg2
 
 app = Flask(__name__)
 
@@ -13,11 +15,10 @@ app.secret_key = "inventario2026"
 
 # Conexión BD
 def conectar():
-    return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="0202",
-        database="inventario"
+    return psycopg2.connect(
+        os.getenv(
+            "DATABASE_URL"
+        )
     )
 
 # Verificar login
