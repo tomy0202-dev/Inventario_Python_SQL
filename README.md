@@ -1,30 +1,24 @@
 # Sistema de Inventario Web
 
-Proyecto desarrollado con Python, Flask y MySQL.
+Aplicación desarrollada con Python, Flask y MySQL.
 
-Aplicación web para gestionar inventario con autenticación de administrador.
-
----
-
-## Funciones
-
-✅ Login administrador
-
-✅ Agregar productos
-
-✅ Ver inventario
-
-✅ Buscar productos
-
-✅ Actualizar stock
-
-✅ Eliminar productos
-
-✅ Estadísticas del inventario
+Sistema con autenticación de administrador para gestionar inventario.
 
 ---
 
-## Tecnologías usadas
+## Funcionalidades
+
+- 🔐 Login administrador
+- ➕ Agregar productos
+- 📋 Ver inventario
+- 🔎 Buscar productos
+- ✏️ Actualizar stock
+- ❌ Eliminar productos
+- 📊 Estadísticas
+
+---
+
+## Tecnologías
 
 - Python 3.13
 - Flask
@@ -36,19 +30,13 @@ Aplicación web para gestionar inventario con autenticación de administrador.
 
 ## Instalación
 
-Clonar repositorio:
+Clonar:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone URL
 ```
 
-Entrar:
-
-```bash
-cd Inventario_Python_SQL
-```
-
-Instalar dependencias:
+Instalar:
 
 ```bash
 pip install -r requirements.txt
@@ -65,13 +53,9 @@ Abrir:
 ```plaintext
 http://127.0.0.1:5000
 ```
-
 ---
+Usuario: admin
 
-## Usuario de prueba
+Contraseña: 1234
 
-Usuario:
-admin
-
-Contraseña:
-1234
+Desarrollado por Tomas Bonilla.
