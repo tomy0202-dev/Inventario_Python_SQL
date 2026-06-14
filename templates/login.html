@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link
+rel="stylesheet"
+
+href="{{ url_for(
+'static',
+filename='style.css'
+) }}">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>
+🔒 Login
+</h1>
+
+<form method="POST">
+
+<input
+name="usuario"
+placeholder="Usuario"
+required>
+<input
+type="password"
+name="clave"
+placeholder="Contraseña"
+required>
+
+<button>
+Ingresar
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

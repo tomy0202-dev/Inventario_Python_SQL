@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Actualizar
+</title>
+
+<link
+rel="stylesheet"
+
+href="{{ url_for(
+'static',
+filename='style.css'
+) }}">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+<h1>
+✏️ Actualizar Stock
+</h1>
+
+<p>
+Escribe el ID y la nueva cantidad
+</p>
+
+<form method="POST">
+
+<input
+type="number"
+name="id"
+placeholder="ID Producto"
+required>
+<input
+type="number"
+name="cantidad"
+placeholder="Nueva cantidad"
+required>
+
+<button>
+Actualizar
+</button>
+
+</form>
+
+<a
+href="/"
+class="volver">
+
+← Volver
+</a>
+
+</div>
+
+</body>
+
+</html>

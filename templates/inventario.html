@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Inventario</title>
+
+<link
+rel="stylesheet"
+href="{{ url_for(
+'static',
+filename='style.css'
+) }}">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>
+📋 Inventario
+</h1>
+
+<div class="cards">
+<div class="card">
+
+<h2>
+{{ total }}
+</h2>
+
+<p>
+Productos
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+${{ valor }}
+</h2>
+
+<p>
+Valor Total
+</p>
+
+</div>
+
+</div>
+
+<form>
+
+<input
+type="text"
+name="buscar"
+placeholder="Buscar producto">
+
+<button>
+Buscar
+</button>
+
+</form>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Nombre</th>
+<th>Precio</th>
+<th>Cantidad</th>
+<th>Acción</th>
+</tr>{% for p in productos %}<tr>
+<td>{{ p[0] }}</td>
+<td>{{ p[1] }}</td>
+<td>${{ p[2] }}</td>
+<td>{{ p[3] }}</td>
+
+<td>
+
+<a
+class="borrar"
+href="/eliminar/{{ p[0] }}"
+onclick="
+return confirm(
+'¿Eliminar producto?'
+)"
+>
+Eliminar
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+
+<a
+href="/"
+class="volver">
+← Volver
+</a>
+
+</div>
+
+</body>
+
+</html>

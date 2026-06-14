@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Sistema Inventario
+</title>
+
+<link
+rel="stylesheet"
+
+href="{{ url_for(
+'static',
+filename='style.css'
+) }}">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>
+📦 Sistema de Inventario
+</h1>
+
+<div class="menu">
+
+<a
+href="/agregar"
+class="boton agregar"
+>
+➕ Agregar producto
+</a>
+
+<a
+href="/inventario"
+class="boton ver"
+>
+📋 Ver inventario
+</a>
+
+<a
+href="/actualizar"
+class="boton actualizar"
+>
+✏️ Actualizar stock
+</a>
+
+</div>
+
+<a
+href="/logout"
+class="salir"
+>
+Cerrar sesión
+</a>
+
+</div>
+
+</body>
+
+</html>
